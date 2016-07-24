@@ -523,5 +523,3 @@ write.csv(Model_hw_2_PointForecast,file='./Data/Model_hw_2_PointForecast.csv')
 #As AIC,AICc,BIC for Holt-Winter's additive error model method are smaller as compared to multiplicative method. Therefore, Holt-Winter's additive error model method is best.
 
 
-## Summarize results.
-
