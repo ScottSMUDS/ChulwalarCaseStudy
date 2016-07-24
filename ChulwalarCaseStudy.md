@@ -1,6 +1,9 @@
 # ChulwalarCaseStudy
 Rajeev, Armand, Najeeb, Marvin  
 July 21, 2016  
+# Introduction
+
+The purpose of this analysis is to test a variety of forecasting methods for predicting the exports of island of Chuwalhar, part of the island group Urbano.  The data available are the past exports of flowers ranging from the years 2008 to 2013, planned exports from 2008 to 2013 for spices and teas, and a number of indicators likely related to exports (satisfaction indexes, export prices, temperature, etc).  In addition, there are also a number of national holidays in March, April, and December which influence exports.
 
 
 # Set Up
@@ -1648,18 +1651,18 @@ summary(Model_holt_2)
 ## 
 ## Forecasts:
 ##          Point Forecast   Lo 80   Hi 80   Lo 95    Hi 95
-## Jan 2014        4488281 3074263 5887433 2359377  6654833
-## Feb 2014        4502175 2889080 6246011 2180168  7365230
-## Mar 2014        4516113 2669550 6570416 2018156  7982196
-## Apr 2014        4530094 2520063 6826587 1823563  8344817
-## May 2014        4544118 2368621 7015626 1723387  9048944
-## Jun 2014        4558186 2252172 7205866 1629213  9415954
-## Jul 2014        4572297 2124450 7354371 1486632 10072414
-## Aug 2014        4586452 2065856 7579117 1357938 10340966
-## Sep 2014        4600650 1979265 7810519 1295002 10729748
-## Oct 2014        4614893 1892122 7949597 1195168 11233649
-## Nov 2014        4629180 1785018 8188363 1131761 12149347
-## Dec 2014        4643510 1727889 8405332 1072362 12297377
+## Jan 2014        4488281 3036126 5864729 2307602  6610773
+## Feb 2014        4502175 2846323 6250222 2141220  7382983
+## Mar 2014        4516113 2664093 6583061 1945814  8017952
+## Apr 2014        4530094 2531659 6799478 1816661  8444806
+## May 2014        4544118 2372148 7043603 1690176  8823645
+## Jun 2014        4558186 2269172 7218774 1595389  9379983
+## Jul 2014        4572297 2142182 7465531 1510041  9945640
+## Aug 2014        4586452 2053969 7590233 1366926 10103337
+## Sep 2014        4600650 1965206 7844358 1271466 10832223
+## Oct 2014        4614893 1900367 7927949 1195356 11135698
+## Nov 2014        4629180 1788457 8089414 1175676 11693701
+## Dec 2014        4643510 1758633 8385244 1064902 12265772
 ```
 
 ```r
@@ -1766,18 +1769,18 @@ summary(Model_holt_4)
 ## 
 ## Forecasts:
 ##          Point Forecast   Lo 80   Hi 80   Lo 95    Hi 95
-## Jan 2014        4470648 3063458 5902906 2392002  6617812
-## Feb 2014        4473164 2812821 6236473 2113090  7310812
-## Mar 2014        4475630 2648505 6546321 1923322  7961822
-## Apr 2014        4478047 2455800 6853149 1821718  8453445
-## May 2014        4480418 2350256 7006760 1679835  9079797
-## Jun 2014        4482742 2222956 7253813 1505194  9523297
-## Jul 2014        4485020 2110709 7376456 1437544  9870277
-## Aug 2014        4487253 1996769 7531410 1301025 10246236
-## Sep 2014        4489443 1907417 7751120 1215606 10631763
-## Oct 2014        4491589 1821054 7952088 1199225 11229992
-## Nov 2014        4493694 1690720 8077083 1100806 11849712
-## Dec 2014        4495757 1642014 8341722 1038169 11768352
+## Jan 2014        4470648 3044919 5839852 2306113  6602677
+## Feb 2014        4473164 2781935 6217517 2070372  7174778
+## Mar 2014        4475630 2649244 6440045 1950897  7846352
+## Apr 2014        4478047 2502614 6799175 1765469  8387752
+## May 2014        4480418 2362455 6974295 1660278  8754869
+## Jun 2014        4482742 2226722 7214370 1544836  9254857
+## Jul 2014        4485020 2128773 7174252 1441200  9759596
+## Aug 2014        4487253 2013955 7378787 1306060  9804268
+## Sep 2014        4489443 1913782 7674816 1261507 10542992
+## Oct 2014        4491589 1846965 7816676 1176130 10926741
+## Nov 2014        4493694 1757014 8047975 1133577 11085529
+## Dec 2014        4495757 1657997 8317235 1031309 11858888
 ```
 
 ```r
@@ -1999,3 +2002,4 @@ As AIC,AICc,BIC for Holt-Winter's additive error model method are smaller as com
 
 
 ## Summarize results.
+After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements, preference is given to AIC, AICc, and BIC, which the additive seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.

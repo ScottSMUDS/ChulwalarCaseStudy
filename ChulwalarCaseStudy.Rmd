@@ -6,6 +6,9 @@ output:
   html_document:
     keep_md: true
 ---
+# Introduction
+
+The purpose of this analysis is to test a variety of forecasting methods for predicting the exports of island of Chuwalhar, part of the island group Urbano.  The data available are the past exports of flowers ranging from the years 2008 to 2013, planned exports from 2008 to 2013 for spices and teas, and a number of indicators likely related to exports (satisfaction indexes, export prices, temperature, etc).  In addition, there are also a number of national holidays in March, April, and December which influence exports.
 
 
 # Set Up
@@ -534,3 +537,4 @@ As AIC,AICc,BIC for Holt-Winter's additive error model method are smaller as com
 
 
 ## Summarize results.
+After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements, preference is given to AIC, AICc, and BIC, which the additive seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.
