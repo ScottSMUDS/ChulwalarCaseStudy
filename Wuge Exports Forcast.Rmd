@@ -22,7 +22,7 @@ Chulwalar is an island located near the Pacific and is well known for producing 
 
 ```{r setup, include=TRUE}
 require(fpp)
-require(forecast)
+
 
 ImportedAsIsData <- read.csv(file.choose(), header = F, sep=";", fill = T)#select ImportedAsIsDataChulwalar.csv 
 ImportedPlanData <- read.csv(file.choose(), header = F, sep=";", fill = T)#select ImportedPlanDataChulwalar.csv 
