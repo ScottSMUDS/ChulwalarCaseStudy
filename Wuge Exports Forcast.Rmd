@@ -8,7 +8,7 @@ output:
 ---
 
 ###**Introduction** 
-Chulwalar is a an island located near the Pacific and is well known for producing unique flowers during the Winter Season. Overall there are around four types, IE ***Efak***, ***Wuge***, ***BlueEtel*** and ***RedEtel***, this document will focus on  the exports related the ***WUGE Flower*** and determine the best fit ***MODEL*** that predicts and forecast values beyond 2014. This analysis would help the government of Chulwalar compare their set plan/estimates for years ahead.
+Chulwalar is an island located near the Pacific and is well known for producing unique flowers during the Winter Season. Overall there are around four types, IE ***Efak***, ***Wuge***, ***BlueEtel*** and ***RedEtel***, this document will focus on  the exports related the ***WUGE Flower*** and determine the best fit ***MODEL*** that predicts and forecast values beyond 2014. This analysis would help the government of Chulwalar compare their set plan/estimates for years ahead.
 
 ###**Packages And Datasets Required**
 
