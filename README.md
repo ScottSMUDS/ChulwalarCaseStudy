@@ -40,4 +40,4 @@ This folder has a summary document containing detailed analysis of different mod
 
 Conclusion:
 
-After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements (RMSE, MAE, MAPE, and MASE), preference is given to RMSE, MAE, MAPE, and MASE, which the multiplicative seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.
+After performing the analysis, the Holt-Winter’s multiplicative seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements (RMSE, MAE, MAPE, and MASE), preference is given to RMSE, MAE, MAPE, and MASE, which the multiplicative seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.
