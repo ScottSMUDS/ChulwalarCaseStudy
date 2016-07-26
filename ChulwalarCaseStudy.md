@@ -381,7 +381,7 @@ summary(TotalAsIs_lm)
 ```
 
 ```r
-#As R-squared = 0.8433 and p value (p-value: < 2.2e-16) of slope is very low. It looks like liner model is a got fit. 
+#As R-squared = 0.8433 and p value (p-value: < 2.2e-16) of slope is very low. A linear model is a good fit. 
 
 #Fit a Linear model considering trend and seasonality components of time series.
 TotalAsIs_tslm <- tslm(TotalAsIs ~ TotalPlan )
@@ -1651,18 +1651,18 @@ summary(Model_holt_2)
 ## 
 ## Forecasts:
 ##          Point Forecast   Lo 80   Hi 80   Lo 95    Hi 95
-## Jan 2014        4488281 3036126 5864729 2307602  6610773
-## Feb 2014        4502175 2846323 6250222 2141220  7382983
-## Mar 2014        4516113 2664093 6583061 1945814  8017952
-## Apr 2014        4530094 2531659 6799478 1816661  8444806
-## May 2014        4544118 2372148 7043603 1690176  8823645
-## Jun 2014        4558186 2269172 7218774 1595389  9379983
-## Jul 2014        4572297 2142182 7465531 1510041  9945640
-## Aug 2014        4586452 2053969 7590233 1366926 10103337
-## Sep 2014        4600650 1965206 7844358 1271466 10832223
-## Oct 2014        4614893 1900367 7927949 1195356 11135698
-## Nov 2014        4629180 1788457 8089414 1175676 11693701
-## Dec 2014        4643510 1758633 8385244 1064902 12265772
+## Jan 2014        4488281 3120748 5937356 2410220  6695840
+## Feb 2014        4502175 2885792 6243273 2179280  7368853
+## Mar 2014        4516113 2671288 6598579 1903566  8003774
+## Apr 2014        4530094 2490624 6726995 1767020  8391779
+## May 2014        4544118 2376042 7018503 1696813  8980307
+## Jun 2014        4558186 2238318 7215090 1566984  9448923
+## Jul 2014        4572297 2132289 7455343 1430095  9949802
+## Aug 2014        4586452 2042228 7687210 1360088 10411327
+## Sep 2014        4600650 1976985 7797113 1318947 10765130
+## Oct 2014        4614893 1885573 7893760 1228862 11184039
+## Nov 2014        4629180 1804990 8202051 1198952 11603118
+## Dec 2014        4643510 1721714 8262406 1120232 12011213
 ```
 
 ```r
@@ -1769,18 +1769,18 @@ summary(Model_holt_4)
 ## 
 ## Forecasts:
 ##          Point Forecast   Lo 80   Hi 80   Lo 95    Hi 95
-## Jan 2014        4470648 3044919 5839852 2306113  6602677
-## Feb 2014        4473164 2781935 6217517 2070372  7174778
-## Mar 2014        4475630 2649244 6440045 1950897  7846352
-## Apr 2014        4478047 2502614 6799175 1765469  8387752
-## May 2014        4480418 2362455 6974295 1660278  8754869
-## Jun 2014        4482742 2226722 7214370 1544836  9254857
-## Jul 2014        4485020 2128773 7174252 1441200  9759596
-## Aug 2014        4487253 2013955 7378787 1306060  9804268
-## Sep 2014        4489443 1913782 7674816 1261507 10542992
-## Oct 2014        4491589 1846965 7816676 1176130 10926741
-## Nov 2014        4493694 1757014 8047975 1133577 11085529
-## Dec 2014        4495757 1657997 8317235 1031309 11858888
+## Jan 2014        4470648 3053946 5856775 2312488  6558288
+## Feb 2014        4473164 2839927 6193534 2145852  7350704
+## Mar 2014        4475630 2623845 6488374 1952336  7820860
+## Apr 2014        4478047 2478978 6748868 1790217  8216777
+## May 2014        4480418 2367628 6999843 1659600  9054654
+## Jun 2014        4482742 2229758 7185204 1508137  9398346
+## Jul 2014        4485020 2079841 7343297 1394643  9852380
+## Aug 2014        4487253 2000296 7526207 1342104 10158484
+## Sep 2014        4489443 1909238 7670627 1249391 10678232
+## Oct 2014        4491589 1841323 7916744 1165046 11127287
+## Nov 2014        4493694 1731750 8051908 1061877 11277941
+## Dec 2014        4495757 1644454 8314622 1067821 11901056
 ```
 
 ```r
@@ -1815,7 +1815,8 @@ plot(Model_holt_4$model$state)
 ![](ChulwalarCaseStudy_files/figure-html/unnamed-chunk-27-6.png)<!-- -->
 
 ```r
-plot(Model_holt_1, plot.conf=FALSE, ylab="Exports Chulwalar  )", xlab="Year", main="", fcol="white", type="o")
+plot(Model_holt_1, plot.conf=FALSE, ylab="Exports Chulwalar", xlab="Year", main="Forecasts for Non-Seasonal Methods", fcol="white", type="o")
+
 lines(fitted(Model_ses), col="purple", type="o")
 lines(fitted(Model_holt_1), col="blue", type="o")
 lines(fitted(Model_holt_2), col="red", type="o")
@@ -1826,7 +1827,7 @@ lines(Model_holt_1$mean, col="blue", type="o")
 lines(Model_holt_2$mean, col="red", type="o")
 lines(Model_holt_3$mean, col="green", type="o")
 lines(Model_holt_4$mean, col="orange", type="o")
-legend("topleft",lty=1, col=c(1,"purple","blue","red","green","orange"), c("data", "SES","Holts auto", "Exponential", "Additive Damped", "Multiplicative Damped"),pch=1)
+legend("topleft",lty=1, col=c(1,"purple","blue","red","green","orange"), c("data", "SES","Holt's Linear", "Holt's Exponential", "Damped Holt's Linear", "Damped Holt's Exponential"),pch=1)
 ```
 
 ![](ChulwalarCaseStudy_files/figure-html/unnamed-chunk-27-7.png)<!-- -->
@@ -1954,7 +1955,7 @@ plot(Model_hw_2)
 ![](ChulwalarCaseStudy_files/figure-html/unnamed-chunk-28-2.png)<!-- -->
 
 ```r
-plot(Model_hw_1, ylab="Exports Chulwalar  ", plot.conf=FALSE, type="o", fcol="white", xlab="Year")
+plot(Model_hw_1, ylab="Exports Chulwalar", plot.conf=FALSE, type="o", fcol="white", xlab="Year",main="Holt-Winters' Seasonal Methods")
 lines(fitted(Model_hw_1), col="red", lty=2)
 lines(fitted(Model_hw_2), col="green", lty=2)
 lines(Model_hw_1$mean, type="o", col="red")
@@ -1998,8 +1999,8 @@ write.csv(Model_hw_2_PointForecast,file='./Data/Model_hw_2_PointForecast.csv')
 ```
 
 ## Use accuracy measurements to determine which method is best. 
-As AIC,AICc,BIC for Holt-Winter's additive error model method are smaller as compared to multiplicative method. Therefore, Holt-Winter's additive error model method is best.
+The additive seasonal method was better for AIC, AICc, BIC, and MPE while the multiplicative method was better for RMSE, MAE, MAPE, and MASE.
 
 
 ## Summarize results.
-After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements, preference is given to AIC, AICc, and BIC, which the additive seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.
+After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements (RMSE, MAE, MAPE, and MASE), preference is given to RMSE, MAE, MAPE, and MASE, which the multiplicative seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.

@@ -115,8 +115,7 @@ The results show a very high planning accuracy.
 #Fit a Linear Model between Total As Is and Total Plan
 TotalAsIs_lm <- lm(TotalAsIs ~ TotalPlan , data = TotalAsIs)
 summary(TotalAsIs_lm)
-
-#As R-squared = 0.8433 and p value (p-value: < 2.2e-16) of slope is very low. It looks like liner model is a got fit. 
+#As R-squared = 0.8433 and p value (p-value: < 2.2e-16) of slope is very low. A linear model is a good fit. 
 
 #Fit a Linear model considering trend and seasonality components of time series.
 TotalAsIs_tslm <- tslm(TotalAsIs ~ TotalPlan )
@@ -486,7 +485,8 @@ plot(Model_holt_2$model$state)
 plot(Model_holt_3$model$state)
 plot(Model_holt_4$model$state)
 
-plot(Model_holt_1, plot.conf=FALSE, ylab="Exports Chulwalar  )", xlab="Year", main="", fcol="white", type="o")
+plot(Model_holt_1, plot.conf=FALSE, ylab="Exports Chulwalar", xlab="Year", main="Forecasts for Non-Seasonal Methods", fcol="white", type="o")
+
 lines(fitted(Model_ses), col="purple", type="o")
 lines(fitted(Model_holt_1), col="blue", type="o")
 lines(fitted(Model_holt_2), col="red", type="o")
@@ -497,7 +497,7 @@ lines(Model_holt_1$mean, col="blue", type="o")
 lines(Model_holt_2$mean, col="red", type="o")
 lines(Model_holt_3$mean, col="green", type="o")
 lines(Model_holt_4$mean, col="orange", type="o")
-legend("topleft",lty=1, col=c(1,"purple","blue","red","green","orange"), c("data", "SES","Holts auto", "Exponential", "Additive Damped", "Multiplicative Damped"),pch=1)
+legend("topleft",lty=1, col=c(1,"purple","blue","red","green","orange"), c("data", "SES","Holt's Linear", "Holt's Exponential", "Damped Holt's Linear", "Damped Holt's Exponential"),pch=1)
 ```
 
 ## Holt-Winter's seasonal method   
@@ -512,7 +512,7 @@ Model_hw_2 <- hw(TotalAsIs ,seasonal="multiplicative",h=12)
 summary(Model_hw_2)
 plot(Model_hw_2)
 
-plot(Model_hw_1, ylab="Exports Chulwalar  ", plot.conf=FALSE, type="o", fcol="white", xlab="Year")
+plot(Model_hw_1, ylab="Exports Chulwalar", plot.conf=FALSE, type="o", fcol="white", xlab="Year",main="Holt-Winters' Seasonal Methods")
 lines(fitted(Model_hw_1), col="red", lty=2)
 lines(fitted(Model_hw_2), col="green", lty=2)
 lines(Model_hw_1$mean, type="o", col="red")
@@ -533,8 +533,8 @@ write.csv(Model_hw_2_PointForecast,file='./Data/Model_hw_2_PointForecast.csv')
 ```
 
 ## Use accuracy measurements to determine which method is best. 
-As AIC,AICc,BIC for Holt-Winter's additive error model method are smaller as compared to multiplicative method. Therefore, Holt-Winter's additive error model method is best.
+The additive seasonal method was better for AIC, AICc, BIC, and MPE while the multiplicative method was better for RMSE, MAE, MAPE, and MASE.
 
 
 ## Summarize results.
-After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements, preference is given to AIC, AICc, and BIC, which the additive seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.
+After performing the analysis, the Holt-Winter’s additive seasonal method was found to be best suited for predicting Chulwalar’s exports.  While the multiplicative seasonal method was more accurate by some measurements (RMSE, MAE, MAPE, and MASE), preference is given to RMSE, MAE, MAPE, and MASE, which the multiplicative seasonal method was found to be more accurate for.  Advice to the Prime Minister of Chulwalar would be to use that method as guidance when planning exports.
