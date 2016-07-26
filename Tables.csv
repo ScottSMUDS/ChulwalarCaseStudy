@@ -1,0 +1,24 @@
+Measure,Correlation,,,FC Method,AIC,AICc,BIC,ME,RMSE,MAE,MPE,MAPE,MASE,ACF1
+Efak Actual vs Coffee Planned,90.6%,,,Simple exponential smoothing," 2,230.06 "," 2,230.23 "," 2,234.61 "," 47,469.84 "," 609,507.00 "," 429,997.10 ",-1.511, 15.02 , 1.17 ,0.024
+Wuge Actual vs Spices Planned,87.9%,,,Holt’s linear trend," 2,233.73 "," 2,234.33 "," 2,242.84 "," (16,586.90)"," 608,119.10 "," 441,110.70 ",-3.889, 15.75 , 1.20 ,0.035
+Blue Etel Actual vs Tea Planned,80.4%,,,Holt's exponential trend," 2,251.01 "," 2,251.61 "," 2,260.12 "," 37,825.61 "," 609,787.50 "," 433,018.90 ",-1.838, 15.18 , 1.18 ,0.029
+Red Etel Actual vs Loose TeaPlanned,91.1%,,,Holt's linear trend w/ dampening," 2,235.89 "," 2,236.80 "," 2,247.27 "," 15,578.94 "," 608,787.20 "," 436,909.70 ",-2.797, 15.47 , 1.19 ,0.034
+Total Etel Actual vs Tea Bag Planned,91.6%,,,Holt's exponential trend w/ dampening," 2,253.22 "," 2,254.13 "," 2,264.60 "," 46,119.56 "," 609,906.70 "," 432,069.10 ",-1.549, 15.12 , 1.18 ,0.025
+Total Flowers Actual vs Total Exports Planned,91.8%,,,Holt-Winters' additive seasonal," 2,124.86 "," 2,134.75 "," 2,161.28 "," 21,615.43 "," 241,685.00 "," 202,218.50 ",-0.083, 7.33 ,0.551,-0.282
+,,,,Holt-Winters' multiplicative seasonal," 2,128.30 "," 2,138.19 "," 2,164.73 "," 17,434.11 "," 235,296.60 "," 191,805.30 ",-0.329, 7.21 ,0.523,-0.351
+,,,,,,,,,,,,,,
+Measure,Correlation,Strength,,Measure,Correlation,Strength,,,,,,,,
+Change in export price index vs total exports,66.4%,High Moderate,,Change in export price index vs total wuge exports,76.19%,High Moderate,,,,,,,,
+Satisfaction index (government) vs total exports,20.1%,Low Moderate,,Satisfaction index (government) vs total wuge exports,30.30%,Low Moderate,,,,,,,,
+Temperature vs total exports,-34.3%,Low Moderate,,Temperature vs total wuge exports,-20.45%,Low Moderate,,,,,,,,
+Monthly Births vs total exports,-11.9%,Low,,Monthly Births vs total wuge exports,-0.74%,Low,,,,,,,,
+Satisfaction index (external) vs total exports,58.8%,Moderate,,Satisfaction index (external) vs total wuge exports,67.87%,High Moderate,,,,,,,,
+Urbano total exports vs Chulwahla total exports,63.8%,High Moderate,,Urbano total wuge exports vs Chulwahla total wuge exports,71.18%,High Moderate,,,,,,,,
+Globalisation party members vs total exports,63.0%,High Moderate,,Globalisation party members vs total wuge exports,71.94%,High Moderate,,,,,,,,
+Average export price index vs total exports,62.5%,High Moderate,,Average export price index vs total wuge exports,71.60%,High Moderate,,,,,,,,
+Producer price index of Etel vs total exports,48.4%,Moderate,,Producer price index of Etel vs total wuge exports,49.21%,Moderate,,,,,,,,
+National holidays vs total exports,-0.8%,Low,,National holidays vs total wuge exports,6.51%,Low,,,,,,,,
+Chulwalar index vs total exports,48.4%,Moderate,,Chulwalar index vs total wuge exports,57.22%,Moderate,,,,,,,,
+Monthly inflation vs total exports,0.2%,Low,,Monthly inflation vs total wuge exports,3.19%,Low,,,,,,,,
+Independence day presents vs total exports,43.6%,Moderate,,Independence day presents vs total wuge exports,48.92%,Moderate,,,,,,,,
+Influence of national holidays vs total exports,37.2%,Low Moderate,,Influence of national holidays vs total wuge exports,37.12%,Low Moderate,,,,,,,,
