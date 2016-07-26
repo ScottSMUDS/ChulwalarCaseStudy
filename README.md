@@ -23,7 +23,7 @@ Directory Structure:
 
 A) Data SubFolder:-
 
-Data Folder has raw data.
+Data Folder has the raw data of Chulwalar Imported As Is, Imported Planned and Imported Indicator.
 
 B) Analysis SubFolder:-
 
