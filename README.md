@@ -10,7 +10,7 @@ The purpose of this analysis is to test a variety of forecasting methods for pre
 
 Methodology:
 
-The software used to perform the forecasts is RStudio utilizing the “fpp” and “forecast” packages.  These packages allow the use of the below forecasting methods.
+The software used to perform the forecasts is RStudio utilizing the “fpp” and “forecast” packages.  These packages allow the use of the below forecasting methods.  
 •	Simple Exponential Smoothing  
 •	Holt Linear Trend  
 •	Holt Exponential Trend  
