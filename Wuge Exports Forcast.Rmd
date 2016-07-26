@@ -369,7 +369,7 @@ summary(Model_holt_4)
 plot(Model_holt_4)
 ```
 
-###### **Model Comparison Holt's Linear, Holt's Exponential, Holt's Damped Linear, Holt's Damped Exponential and Simple expontential smoothing.**
+###### **Model Comparison: Holt's Linear, Holt's Exponential, Holt's Damped Linear, Holt's Damped Exponential and Simple expontential smoothing.**
 
 ```{r echo=TRUE}
 plot.new()
@@ -408,7 +408,7 @@ summary(Model_hw_2)
 plot(Model_hw_2)
 ```
 
-###### **Model Comparison between Holt's Winter Seasonal Additive vs Multiplicative**
+###### **Model Comparison: Holt's Winter Seasonal Additive vs Multiplicative**
 
 ```{r echo=TRUE}
 plot.new()
