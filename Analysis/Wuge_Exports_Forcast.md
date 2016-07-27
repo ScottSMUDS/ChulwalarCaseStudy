@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Chulwalar Wuge Exports
 Marvin Scott  
 July 25, 2016  
@@ -2254,4 +2254,4 @@ legend("topleft",lty=1, pch=1, col=1:3, c("data","Holt Winters' Additive","Holt 
 Based on the models reviewed, strongest evidence lead to infer that the **Holt's Winter Seasonal Additive** and **Holt's Winter Seasonal Multiplicative** models are more reliable when compared with the other models. Both these models produced the best or least **AICs**, however **Holt's Winter Seasonal Multiplicative** produced the lower **RMSE** score when compared with **Holt's Winter Seasonal Additive**. Although **Holt's Winter Seasonal Additive** model had the better or lower **AIC** when compared with the multiplicative approach, as a group we suggested **Holt's Winter Seasonal Multiplicative** as the best model to forecast Chulwalar exports since result had the lesser **RMSE**
  
  
->>>>>>> fd5f096d4b2885a219d248744f5a048e13b8440b
+
